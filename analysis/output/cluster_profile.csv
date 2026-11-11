@@ -1,0 +1,5 @@
+﻿cluster,n_courses,pct,price_list_mean,price_list_median,rating_mean,rating_median,num_ratings_mean,num_ratings_median,hours_mean,hours_median,lectures_mean,lectures_median,discount_pct_mean,discount_pct_median
+0,371,25.2,1489431.27,1439000.0,4.55,4.6,14695.91,2564.0,20.21,12.0,167.47,107.0,79.83,80.9
+1,156,10.6,414833.33,399000.0,3.91,4.0,142.58,41.0,6.61,4.5,51.92,41.0,38.05,37.6
+2,581,39.4,455024.1,399000.0,4.57,4.5,927.4,74.0,3.2,2.5,32.83,28.0,38.49,37.6
+3,365,24.8,452506.85,399000.0,4.5,4.5,1185.61,169.0,24.19,16.5,173.55,135.0,38.07,37.6

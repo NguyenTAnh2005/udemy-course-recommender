@@ -1,0 +1,61 @@
+{
+  "n_courses": 1473,
+  "n_clusters": 4,
+  "silhouette": 0.2968,
+  "k_selection": [
+    {
+      "k": 2,
+      "silhouette": 0.3988,
+      "inertia": 5562.5
+    },
+    {
+      "k": 3,
+      "silhouette": 0.3153,
+      "inertia": 4290.9
+    },
+    {
+      "k": 4,
+      "silhouette": 0.298,
+      "inertia": 3776.3
+    },
+    {
+      "k": 5,
+      "silhouette": 0.2727,
+      "inertia": 3358.5
+    },
+    {
+      "k": 6,
+      "silhouette": 0.2459,
+      "inertia": 2999.4
+    },
+    {
+      "k": 7,
+      "silhouette": 0.2328,
+      "inertia": 2761.8
+    },
+    {
+      "k": 8,
+      "silhouette": 0.2509,
+      "inertia": 2551.2
+    }
+  ],
+  "topics": [
+    "business",
+    "design",
+    "english",
+    "python",
+    "web development"
+  ],
+  "features": [
+    "price_list",
+    "rating",
+    "num_ratings",
+    "hours",
+    "lectures",
+    "discount_pct"
+  ],
+  "pca_explained": [
+    0.4844,
+    0.2116
+  ]
+}

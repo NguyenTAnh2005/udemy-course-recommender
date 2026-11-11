@@ -1,0 +1,44 @@
+# ===== Python (analysis/ + FastAPI backend sau này) =====
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ===== Node / React (web/frontend, scripts/) =====
+node_modules/
+dist/
+build/
+.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===== Biến môi trường & bí mật (quan trọng cho FastAPI) =====
+.env
+.env.*
+!.env.example
+
+# ===== Database cục bộ (nếu backend dùng SQLite) =====
+*.sqlite3
+*.db
+
+# ===== Editor / OS =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Log & file tạm =====
+*.log
+*.tmp
+*.bak

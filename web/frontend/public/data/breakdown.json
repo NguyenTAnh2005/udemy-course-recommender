@@ -1,0 +1,171 @@
+{
+  "topic_by_cluster": {
+    "keys": [
+      "business",
+      "design",
+      "english",
+      "python",
+      "web development"
+    ],
+    "rows": [
+      {
+        "cluster": 0,
+        "business": 51,
+        "design": 65,
+        "english": 87,
+        "python": 109,
+        "web development": 59,
+        "total": 371
+      },
+      {
+        "cluster": 1,
+        "business": 29,
+        "design": 35,
+        "english": 19,
+        "python": 29,
+        "web development": 44,
+        "total": 156
+      },
+      {
+        "cluster": 2,
+        "business": 164,
+        "design": 135,
+        "english": 154,
+        "python": 60,
+        "web development": 68,
+        "total": 581
+      },
+      {
+        "cluster": 3,
+        "business": 37,
+        "design": 49,
+        "english": 44,
+        "python": 112,
+        "web development": 123,
+        "total": 365
+      }
+    ]
+  },
+  "level_by_cluster": {
+    "keys": [
+      "Beginner",
+      "Intermediate",
+      "Expert",
+      "All Levels"
+    ],
+    "rows": [
+      {
+        "cluster": 0,
+        "Beginner": 62,
+        "Intermediate": 64,
+        "Expert": 7,
+        "All Levels": 238,
+        "total": 371
+      },
+      {
+        "cluster": 1,
+        "Beginner": 63,
+        "Intermediate": 18,
+        "Expert": 5,
+        "All Levels": 70,
+        "total": 156
+      },
+      {
+        "cluster": 2,
+        "Beginner": 175,
+        "Intermediate": 81,
+        "Expert": 3,
+        "All Levels": 322,
+        "total": 581
+      },
+      {
+        "cluster": 3,
+        "Beginner": 85,
+        "Intermediate": 17,
+        "Expert": 5,
+        "All Levels": 258,
+        "total": 365
+      }
+    ]
+  },
+  "price_bin_by_cluster": {
+    "keys": [
+      "≤ 249k",
+      "250k–349k",
+      "350k–499k",
+      "≥ 500k"
+    ],
+    "rows": [
+      {
+        "cluster": 0,
+        "≤ 249k": 155,
+        "250k–349k": 183,
+        "350k–499k": 33,
+        "≥ 500k": 0,
+        "total": 371
+      },
+      {
+        "cluster": 1,
+        "≤ 249k": 125,
+        "250k–349k": 29,
+        "350k–499k": 1,
+        "≥ 500k": 1,
+        "total": 156
+      },
+      {
+        "cluster": 2,
+        "≤ 249k": 450,
+        "250k–349k": 105,
+        "350k–499k": 7,
+        "≥ 500k": 19,
+        "total": 581
+      },
+      {
+        "cluster": 3,
+        "≤ 249k": 259,
+        "250k–349k": 97,
+        "350k–499k": 1,
+        "≥ 500k": 8,
+        "total": 365
+      }
+    ]
+  },
+  "price_now_stats": [
+    {
+      "cluster": 0,
+      "count": 371,
+      "mean": 284553.0,
+      "p25": 249000.0,
+      "median": 269000.0,
+      "p75": 319000.0,
+      "max": 449000.0
+    },
+    {
+      "cluster": 1,
+      "count": 156,
+      "mean": 255795.0,
+      "p25": 249000.0,
+      "median": 249000.0,
+      "p75": 249000.0,
+      "max": 699000.0
+    },
+    {
+      "cluster": 2,
+      "count": 581,
+      "mean": 281134.0,
+      "p25": 249000.0,
+      "median": 249000.0,
+      "p75": 249000.0,
+      "max": 2499000.0
+    },
+    {
+      "cluster": 3,
+      "count": 365,
+      "mean": 287795.0,
+      "p25": 249000.0,
+      "median": 249000.0,
+      "p75": 259000.0,
+      "max": 2499000.0
+    }
+  ]
+}
