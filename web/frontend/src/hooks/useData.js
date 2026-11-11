@@ -16,7 +16,10 @@ export default function useData() {
         })
       )
     )
-      .then(res => setData(Object.fromEntries(FILES.map((f, i) => [f, res[i]]))))
+      .then(res => {
+        const d = Object.fromEntries(FILES.map((f, i) => [f, res[i]]))
+        setData(d)
+      })
       .catch(setError)
   }, [])
 
