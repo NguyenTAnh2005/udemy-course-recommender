@@ -1,7 +1,7 @@
 {
   "n_courses": 1473,
-  "n_clusters": 4,
-  "silhouette": 0.2968,
+  "n_clusters": 3,
+  "silhouette": 0.3153,
   "k_selection": [
     {
       "k": 2,
@@ -37,6 +37,16 @@
       "k": 8,
       "silhouette": 0.2509,
       "inertia": 2551.2
+    },
+    {
+      "k": 9,
+      "silhouette": 0.2399,
+      "inertia": 2382.5
+    },
+    {
+      "k": 10,
+      "silhouette": 0.2285,
+      "inertia": 2227.7
     }
   ],
   "topics": [
