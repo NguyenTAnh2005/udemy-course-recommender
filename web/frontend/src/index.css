@@ -1,1 +1,16 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Chỉ làm mượt grid và text của Recharts để tránh lag hover */
+  .recharts-cartesian-grid line,
+  .recharts-cartesian-axis line,
+  .recharts-text {
+    transition: stroke 0.3s ease, fill 0.3s ease !important;
+  }
+}

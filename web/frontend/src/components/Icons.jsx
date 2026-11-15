@@ -1,4 +1,3 @@
-// Bộ icon SVG nhỏ gọn, không cần cài thêm thư viện
 const base = {
   fill: 'none',
   stroke: 'currentColor',
@@ -94,6 +93,23 @@ export function IconInbox({ className = 'h-5 w-5', ...p }) {
     <svg viewBox="0 0 24 24" className={className} {...base} {...p}>
       <path d="M3 12h5l2 3h4l2-3h5" />
       <path d="M5 5h14l2 7v7H3v-7l2-7z" />
+    </svg>
+  )
+}
+
+export function IconSun({ className = 'h-5 w-5', ...p }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} {...base} {...p}>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+    </svg>
+  )
+}
+
+export function IconMoon({ className = 'h-5 w-5', ...p }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} {...base} {...p}>
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
     </svg>
   )
 }
