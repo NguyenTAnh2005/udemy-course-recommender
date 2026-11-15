@@ -1,10 +1,6 @@
 """
 analysis/kmeans.py - Chuẩn hóa + phân cụm K-means khóa học Udemy.
 
-Chạy:
-    python analysis/kmeans.py            # tự chọn K theo silhouette
-    python analysis/kmeans.py --k 4      # ép K = 4 sau khi đã xem biểu đồ
-
 Đầu vào : data/clean_data.csv
 Đầu ra  : analysis/output/
             k_selection.png      (Elbow + Silhouette)
@@ -35,6 +31,7 @@ FEATURES = ["price_list", "rating", "num_ratings", "hours", "lectures", "discoun
 LOG_COLS = ["price_list", "num_ratings", "hours", "lectures"]
 K_RANGE = range(2, 11)
 SEED = 42
+DEFAULT_K=3
 
 
 def preprocess(df: pd.DataFrame):
@@ -69,7 +66,7 @@ def evaluate_k(Xs):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--k", type=int, default=None, help="số cụm (mặc định: K có silhouette cao nhất)")
+    ap.add_argument("--k", type=int, default=DEFAULT_K, help="số cụm (mặc định: {DEFAULT_K})")
     args = ap.parse_args()
 
     df = pd.read_csv(DATA / "clean_data.csv")
@@ -79,7 +76,7 @@ def main():
 
     print("\n--- Chọn K ---")
     best_k = evaluate_k(Xs)
-    k = args.k or best_k
+    k = args.k 
     print(f"\nK tốt nhất theo silhouette: {best_k} | K dùng để phân cụm: {k}")
 
     km = KMeans(n_clusters=k, n_init=20, random_state=SEED).fit(Xs)
